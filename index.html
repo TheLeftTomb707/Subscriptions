@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscriptions</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="titlediv">
+            <h1 class="title">Choose a Plan</h1>
+        </div>
+        <div class="plans">
+            <div id="plan1" class="planall">
+                <button onclick="plan1()" class="p1btn">Basic</button>
+                <div id="p1after" class="after">
+                    <div style="grid-area: name1;">
+                        <h4>Name</h4>
+                        <p id="name1"></p>
+                    </div>
+                    <div style="grid-area: price1;">
+                        <h4>Price</h4>
+                        <p id="price1"></p>
+                    </div>
+                    <div style="grid-area: space1;">
+                        <h4>Space</h4>
+                        <p id="space1"></p>
+                    </div>
+                    <div style="grid-area: transfer1;">
+                        <h4>Transfer</h4>
+                        <p id="transfer1"></p>
+                    </div>
+                    <div style="grid-area: pages1;">
+                        <h4>Pages</h4>
+                        <p id="pages1"></p>
+                    </div>
+                    <div style="grid-area: discount1;">
+                        <h4>Discount</h4>
+                        <p id="discount1"></p>
+                    </div>
+                    <div style="grid-area: signup1; margin: auto; border: none;">
+                        <button onclick="signup(0)" id="signup1" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div id="plan2" class="planall">
+                <button onclick="plan2()" class="p2btn">Professional</button>
+                <div id="p2after" class="after">
+                    <div style="grid-area: name2;">
+                        <h4>Name</h4>
+                        <p id="name2"></p>
+                    </div>
+                    <div style="grid-area: price2;">
+                        <h4>Price</h4>
+                        <p id="price2"></p>
+                    </div>
+                    <div style="grid-area: space2;">
+                        <h4>Space</h4>
+                        <p id="space2"></p>
+                    </div>
+                    <div style="grid-area: transfer2;">
+                        <h4>Transfer</h4>
+                        <p id="transfer2"></p>
+                    </div>
+                    <div style="grid-area: pages2;">
+                        <h4>Pages</h4>
+                        <p id="pages2"></p>
+                    </div>
+                    <div style="grid-area: discount2;">
+                        <h4>Discount</h4>
+                        <p id="discount2"></p>
+                    </div>
+                    <div style="grid-area: signup2; margin: auto; border: none;">
+                        <button onclick="signup(1)" id="signup2" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div id="plan3" class="planall">
+                <button onclick="plan3()" class="p3btn">Ultimate</button>
+                <div id="p3after" class="after">
+                    <div style="grid-area: name3;">
+                        <h4>Name</h4>
+                        <p id="name3"></p>
+                    </div>
+                    <div style="grid-area: price3;">
+                        <h4>Price</h4>
+                        <p id="price3"></p>
+                    </div>
+                    <div style="grid-area: space3;">
+                        <h4>Space</h4>
+                        <p id="space3"></p>
+                    </div>
+                    <div style="grid-area: transfer3;">
+                        <h4>Transfer</h4>
+                        <p id="transfer3"></p>
+                    </div>
+                    <div style="grid-area: pages3;">
+                        <h4>Pages</h4>
+                        <p id="pages3"></p>
+                    </div>
+                    <div style="grid-area: discount3;">
+                        <h4>Discount</h4>
+                        <p id="discount3"></p>
+                    </div>
+                    <div style="grid-area: signup3; margin: auto; border: none;">
+                        <button onclick="signup(2)" id="signup3" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signupform">
+        <form>
+            <label for="choose">Choose a Plan:</label><br>
+            <select name="choose" id="choose">
+                <option value="default" hidden>Choose</option>
+                <option value="basic" name="basic">Basic</option>
+                <option value="pro" name="pro">Professional</option>
+                <option value="ulti" name="ulti">Ultimate</option>
+            </select><br><br>
+            <label for="fname">First Name:</label><br>
+            <input type="text" pattern="[A-Za-z]" placeholder="first name" required><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" pattern="[A-za-z]" placeholder="last name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="email" required><br><br>
+            <input type="button" value="Submit" onclick="submit_form()" required><br>
+            <button onclick="closeform()" id="close-form">X</button>
+            <p id="bestvalue"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
